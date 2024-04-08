@@ -1,0 +1,14 @@
+Change Component Description : Designator=R82 Old Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL New Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL | TE Connectivity RLC73PH2BR10FTD
+Change Component Description : Designator=R84 Old Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL New Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL | TE Connectivity RLC73PH2BR10FTD
+Added Component: Designator=G5(Gator Pin)
+Added Component: Designator=G6(Gator Pin)
+Added Pin To Net: NetName=GND Pin=G5-1
+Added Pin To Net: NetName=GND Pin=G6-1
+Added Member To Class: ClassName=RoBeast_Power_Switching Member=Component G5 Gator Pin Holder
+Added Member To Class: ClassName=RoBeast_Power_Switching Member=Component G6 Gator Pin Holder
+Added Member To Class: ClassName=RoBeast_Driver Member=Component R91 4.7kR
+Added Member To Class: ClassName=RoBeast_Driver Member=Component R102 4.7kR
+Added Member To Class: ClassName=RoBeast_Driver Member=Component R103 4.7kR (NP)
+Added Member To Class: ClassName=RoBeast_Driver Member=Component R104 4.7kR
+Added Member To Class: ClassName=RoBeast_Driver Member=Component TP57 Test Point
+Added Member To Class: ClassName=RoBeast_Driver Member=Component TP62 Test Point

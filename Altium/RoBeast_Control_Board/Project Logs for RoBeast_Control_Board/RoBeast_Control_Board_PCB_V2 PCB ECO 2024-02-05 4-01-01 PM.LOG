@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=AC/DC IN Pin=G1-1
+Added Pin To Net: NetName=CCT_24V Pin=G1-1

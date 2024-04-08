@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=rENBL Pin=R7-1
+Removed Pin From Net: NetName=eENBL Pin=R9-1
+Added Pin To Net: NetName=rSLP Pin=R7-1
+Added Pin To Net: NetName=eSLP Pin=R9-1

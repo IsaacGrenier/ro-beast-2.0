@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=CCT_24V Pin=C58-1
+Removed Pin From Net: NetName=GND Pin=C58-2
+Removed Member From Class: ClassName=RoBeast_Driver Member=C58
+Change Component Description : Designator=R84 Old Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL New Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL | TE Connectivity RLC73PH2BR10FTD
+Added Member To Class: ClassName=RoBeast_Driver Member=Component R76 4.7kR (NP)

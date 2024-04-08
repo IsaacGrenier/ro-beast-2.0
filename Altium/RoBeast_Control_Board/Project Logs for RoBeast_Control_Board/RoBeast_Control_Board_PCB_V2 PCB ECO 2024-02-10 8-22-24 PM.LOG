@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=USB_N Pin=TVS1-1
+Removed Pin From Net: NetName=GND Pin=TVS1-2
+Removed Pin From Net: NetName=USB_P Pin=TVS2-1
+Removed Pin From Net: NetName=GND Pin=TVS2-2

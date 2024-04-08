@@ -1,0 +1,3 @@
+Added Component: Designator=G3(Gator Pin)
+Added Pin To Net: NetName=5V Pin=G3-1
+Added Member To Class: ClassName=RoBeast_Power_Switching Member=Component G3 Gator Pin Holder

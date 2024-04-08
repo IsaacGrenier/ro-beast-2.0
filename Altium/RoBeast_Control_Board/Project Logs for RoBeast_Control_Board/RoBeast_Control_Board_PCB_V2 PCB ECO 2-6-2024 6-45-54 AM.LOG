@@ -1,0 +1,20 @@
+Added Component: Designator=J21(PH1RB-04-UA)
+Add component (AddParameter): Name = "Category"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.adam-tech.com/downloader.php?p=PH1RB-XX-UA.pdf&src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.adam-tech.com/downloader.php?p=PH1RB-XX-UA.pdf&src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Adam Equipment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "PH1RB-04-UA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing"; Value = "1=0.12, 10=0.094, 100=0.0697, 500=0.0577, 1000=0.05048, 5000=0.04327, 10000=0.04207 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock"; Value = "13315"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number"; Value = "2057-PH1RB-04-UA-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3 Pin=J21-1
+Added Pin To Net: NetName=GND Pin=J21-4
+Added Pin To Net: NetName=SCL Pin=J21-2
+Added Pin To Net: NetName=SCL Pin=U11-35
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=J21-3
+Added Pin To Net: NetName=SDA Pin=U11-34
+Added Net: Name=SDA
+Added Member To Class: ClassName=RoBeast_uC Member=Component J21 4 Pin Connector

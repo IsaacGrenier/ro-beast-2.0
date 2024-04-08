@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=DC_BRAKE_SIG Pin=TP59-1
+Removed Member From Class: ClassName=RoBeast_DC_Brake Member=TP59

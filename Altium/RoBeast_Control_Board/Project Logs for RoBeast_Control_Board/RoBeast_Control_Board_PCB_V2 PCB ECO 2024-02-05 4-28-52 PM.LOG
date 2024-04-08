@@ -1,0 +1,18 @@
+Change Component Footprint: Designator=R28 Old Footprint=0805 New Footprint=1206
+Change Component Footprint: Designator=R31 Old Footprint=0805 New Footprint=1206
+Change component parameters: Designator = "R28" ("R28"); Footprint = "0805"; UniqueID = "\JXURYVMJ" ("\JXURYVMJ")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Eaton"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "MFHA1206R2000FC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0.41, 10=0.278, 25=0.2164, 50=0.1594, 100=0.1109, 250=0.09668, 500=0.07972, 1000=0.05766 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "10043"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "283-MFHA1206R2000FCCT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R31" ("R31"); Footprint = "0805"; UniqueID = "\CMSLCYTX" ("\CMSLCYTX")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Eaton"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "MFHA1206R2000FC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0.41, 10=0.278, 25=0.2164, 50=0.1594, 100=0.1109, 250=0.09668, 500=0.07972, 1000=0.05766 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "10043"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "283-MFHA1206R2000FCCT-ND"; VariantName = "[No Variations]"

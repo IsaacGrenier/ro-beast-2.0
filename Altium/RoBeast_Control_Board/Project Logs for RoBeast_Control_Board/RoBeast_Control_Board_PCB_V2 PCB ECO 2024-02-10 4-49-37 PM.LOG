@@ -1,0 +1,12 @@
+Change Component Footprint: Designator=J5 Old Footprint=694108301002 New Footprint=54-00128
+Change component parameters: Designator = "J5" ("J5"); Footprint = "694108301002"; UniqueID = "\ZKHQZTHO" ("\ZKHQZTHO")
+Change component parameters (AddParameter): Name = "Category"; Value = "Connectors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.tensility.com/pdffiles/54-00128.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.tensility.com/pdffiles/54-00128.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Tensility"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "54-00128"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0.91, 10=0.767, 100=0.6888, 1000=0.50096, 5000=0.43834, 10000=0.41642 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "19136"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "839-1511-ND"; VariantName = "[No Variations]"

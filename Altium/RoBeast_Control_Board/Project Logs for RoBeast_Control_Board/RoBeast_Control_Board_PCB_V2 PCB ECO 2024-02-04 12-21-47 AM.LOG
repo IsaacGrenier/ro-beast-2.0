@@ -1,0 +1,12 @@
+Added Component: Designator=J8(Gator Pin)
+Added Component: Designator=J20(Gator Pin)
+Added Component: Designator=J21(Gator Pin)
+Added Component: Designator=J22(Gator Pin)
+Added Pin To Net: NetName=AC/DC IN Pin=J8-1
+Added Pin To Net: NetName=3V3 Pin=J20-1
+Added Pin To Net: NetName=5V Pin=J21-1
+Added Pin To Net: NetName=GND Pin=J22-1
+Added Member To Class: ClassName=RoBeast_Power_Switching Member=Component J8 Gator Pin Holder
+Added Member To Class: ClassName=RoBeast_Power_Switching Member=Component J20 Gator Pin Holder
+Added Member To Class: ClassName=RoBeast_Power_Switching Member=Component J21 Gator Pin Holder
+Added Member To Class: ClassName=RoBeast_Power_Switching Member=Component J22 Gator Pin Holder

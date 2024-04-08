@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=AC/DC IN Pin=J8-1
+Removed Pin From Net: NetName=3V3 Pin=J20-1
+Removed Pin From Net: NetName=5V Pin=J21-1
+Removed Pin From Net: NetName=GND Pin=J22-1
+Removed Member From Class: ClassName=RoBeast_Power_Switching Member=J8
+Removed Member From Class: ClassName=RoBeast_Power_Switching Member=J20
+Removed Member From Class: ClassName=RoBeast_Power_Switching Member=J21
+Removed Member From Class: ClassName=RoBeast_Power_Switching Member=J22
+Added Component: Designator=G1(Gator Pin)
+Added Component: Designator=G2(Gator Pin)
+Added Component: Designator=G3(Gator Pin)
+Added Component: Designator=G4(Gator Pin)
+Added Pin To Net: NetName=AC/DC IN Pin=G1-1
+Added Pin To Net: NetName=3V3 Pin=G2-1
+Added Pin To Net: NetName=5V Pin=G3-1
+Added Pin To Net: NetName=GND Pin=G4-1
+Added Member To Class: ClassName=RoBeast_Power_Switching Member=Component G1 Gator Pin Holder
+Added Member To Class: ClassName=RoBeast_Power_Switching Member=Component G2 Gator Pin Holder
+Added Member To Class: ClassName=RoBeast_Power_Switching Member=Component G3 Gator Pin Holder
+Added Member To Class: ClassName=RoBeast_Power_Switching Member=Component G4 Gator Pin Holder

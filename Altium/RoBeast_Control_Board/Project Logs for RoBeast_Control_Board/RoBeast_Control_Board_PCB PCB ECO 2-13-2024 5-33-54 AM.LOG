@@ -1,0 +1,9 @@
+Added Component: Designator=TP65(Test Point)
+Added Component: Designator=TP66(Test Point)
+Added Component: Designator=TP67(Test Point)
+Added Pin To Net: NetName=GND Pin=TP65-1
+Added Pin To Net: NetName=GND Pin=TP66-1
+Added Pin To Net: NetName=GND Pin=TP67-1
+Added Member To Class: ClassName=RoBeast_Mounting_Shield Member=Component TP65 Test Point
+Added Member To Class: ClassName=RoBeast_Mounting_Shield Member=Component TP66 Test Point
+Added Member To Class: ClassName=RoBeast_Mounting_Shield Member=Component TP67 Test Point

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=eENBL Pin=U11-2
+Removed Pin From Net: NetName=DRV_DIR Pin=U11-48
+Added Pin To Net: NetName=eENBL Pin=U11-41
+Added Pin To Net: NetName=DRV_DIR Pin=U11-44

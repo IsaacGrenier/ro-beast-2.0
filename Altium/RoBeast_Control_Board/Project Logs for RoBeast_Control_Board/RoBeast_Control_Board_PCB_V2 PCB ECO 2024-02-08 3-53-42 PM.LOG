@@ -1,0 +1,203 @@
+Removed Pin From Net: NetName=GND Pin=C30-1
+Removed Pin From Net: NetName=ELEV_1 Pin=C30-2
+Removed Pin From Net: NetName=GND Pin=C31-1
+Removed Pin From Net: NetName=A_HOME Pin=C31-2
+Removed Pin From Net: NetName=GND Pin=C32-1
+Removed Pin From Net: NetName=TILT_1 Pin=C32-2
+Removed Pin From Net: NetName=GND Pin=C33-1
+Removed Pin From Net: NetName=TILT_2 Pin=C33-2
+Removed Pin From Net: NetName=GND Pin=C34-1
+Removed Pin From Net: NetName=TILT_3 Pin=C34-2
+Removed Pin From Net: NetName=GND Pin=C35-1
+Removed Pin From Net: NetName=TILT_4 Pin=C35-2
+Removed Pin From Net: NetName=GND Pin=C36-1
+Removed Pin From Net: NetName=TILT_5 Pin=C36-2
+Removed Pin From Net: NetName=GND Pin=C37-1
+Removed Pin From Net: NetName=TILT_6 Pin=C37-2
+Removed Pin From Net: NetName=GND Pin=C38-1
+Removed Pin From Net: NetName=ELEV_2 Pin=C38-2
+Removed Pin From Net: NetName=ELEV_1 Pin=J7-2
+Removed Pin From Net: NetName=A_HOME Pin=J8-2
+Removed Pin From Net: NetName=TILT_1 Pin=J9-2
+Removed Pin From Net: NetName=TILT_2 Pin=J10-2
+Removed Pin From Net: NetName=TILT_3 Pin=J11-2
+Removed Pin From Net: NetName=TILT_4 Pin=J12-2
+Removed Pin From Net: NetName=TILT_5 Pin=J13-2
+Removed Pin From Net: NetName=TILT_6 Pin=J14-2
+Removed Pin From Net: NetName=ELEV_2 Pin=J15-2
+Removed Pin From Net: NetName=3V3 Pin=R46-2
+Removed Pin From Net: NetName=3V3 Pin=R47-2
+Removed Pin From Net: NetName=3V3 Pin=R48-2
+Removed Pin From Net: NetName=3V3 Pin=R49-2
+Removed Pin From Net: NetName=3V3 Pin=R50-2
+Removed Pin From Net: NetName=GND Pin=R51-1
+Removed Pin From Net: NetName=ELEV_1 Pin=R51-2
+Removed Pin From Net: NetName=GND Pin=R52-1
+Removed Pin From Net: NetName=A_HOME Pin=R52-2
+Removed Pin From Net: NetName=GND Pin=R53-1
+Removed Pin From Net: NetName=TILT_1 Pin=R53-2
+Removed Pin From Net: NetName=GND Pin=R54-1
+Removed Pin From Net: NetName=TILT_2 Pin=R54-2
+Removed Pin From Net: NetName=GND Pin=R55-1
+Removed Pin From Net: NetName=TILT_3 Pin=R55-2
+Removed Pin From Net: NetName=3V3 Pin=R56-2
+Removed Pin From Net: NetName=3V3 Pin=R57-2
+Removed Pin From Net: NetName=3V3 Pin=R58-2
+Removed Pin From Net: NetName=3V3 Pin=R59-2
+Removed Pin From Net: NetName=GND Pin=R60-1
+Removed Pin From Net: NetName=TILT_4 Pin=R60-2
+Removed Pin From Net: NetName=GND Pin=R61-1
+Removed Pin From Net: NetName=TILT_5 Pin=R61-2
+Removed Pin From Net: NetName=GND Pin=R62-1
+Removed Pin From Net: NetName=TILT_6 Pin=R62-2
+Removed Pin From Net: NetName=GND Pin=R63-1
+Removed Pin From Net: NetName=ELEV_2 Pin=R63-2
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=J8
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=J9
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=J10
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=J11
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=J12
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=J13
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=J14
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=J15
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=R46
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=R47
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=R48
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=R49
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=R50
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=R56
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=R57
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=R58
+Removed Member From Class: ClassName=RoBeast_Positional_Feedback Member=R59
+Change Component Footprint: Designator=J7 Old Footprint=26-01-3114 New Footprint=0039291188
+Change Component Comment : Designator=J7 Old Comment=2 Pin Connector New Comment=18 Pin Connector
+Change component parameters: Designator = "J7" ("J7"); Footprint = "26-01-3114"; UniqueID = "\RGRDOCVU" ("\RGRDOCVU")
+Change component parameters (AddParameter): Name = "Board Mounting Option"; Value = "MOUNTING FLANGE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Body Breadth"; Value = "0.394inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Body Depth"; Value = "0.72inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Body Length"; Value = "1.929inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Body/Shell Style"; Value = "RECEPTACLE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Headers and Wire Housings"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com:443/pdfs/VipMasterIC/IC/MOLE/MOLE-S-A0004635529/MOLE-S-A0004635529-1.pdf?src-supplier=IHS+Markit"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com:443/pdfs/VipMasterIC/IC/MOLE/MOLE-S-A0004635529/MOLE-S-A0004635529-1.pdf?src-supplier=IHS+Markit"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/711/039291028-sd-711978.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/711/039291028-sd-711978.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/30097/128000039291188-pcb-headers-30097010.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/30097/128000039291188-pcb-headers-30097010.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/26916/getdatasheetpartid-310375-26916660.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/26916/getdatasheetpartid-310375-26916660.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/11748/0900766b8059542f-11748868.pdf?src-supplier=Rs"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/11748/0900766b8059542f-11748868.pdf?src-supplier=Rs"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink6Description"; Value = "https://datasheet.ciiva.com/5158/0039291188-pcb-headers-228408-5158739.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink6URL"; Value = "https://datasheet.ciiva.com/5158/0039291188-pcb-headers-228408-5158739.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink7Description"; Value = "https://datasheet.ciiva.com/1442/1865038-1442913.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink7URL"; Value = "https://datasheet.ciiva.com/1442/1865038-1442913.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Connector Type"; Value = "Power,Rectangular"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Finish - Mating"; Value = "NOT SPECIFIED"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Finish - Termination"; Value = "Tin (Sn) - with Nickel (Ni) barrier"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Gender"; Value = "Male"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Pattern"; Value = "RECTANGULAR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Resistance"; Value = "10mR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Style"; Value = "SQ PIN-SKT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dielectric Withstanding Voltage (AC)"; Value = "1.5kV"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DIN Conformance"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Durability"; Value = "30Cycles"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Empty Shell"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Filter Feature"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Flammability Rating"; Value = "UL94 V-2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "IEC Conformance"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insertion Force-Max"; Value = "6.672N"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Resistance"; Value = "1GR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JESD-609 Code"; Value = "e3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "39-29-1188"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mating Contact Pitch"; Value = "0.165inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mating Contact Row Spacing"; Value = "0.165inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mating Information"; Value = "MULTIPLE MATING PARTS AVAILABLE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MIL Conformance"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mixed Contacts"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Board"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Option 1"; Value = "POLARIZED LCK"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Option 2"; Value = "LOCKING"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Style"; Value = "RIGHT ANGLE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number Of Connectors"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Contacts"; Value = "18"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number Of PCB Rows"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Rows Loaded"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Option"; Value = "General Purpose"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PCB Contact Pattern"; Value = "RECTANGULAR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PCB Contact Row Spacing"; Value = "5.5118mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Plating Thickness"; Value = "200uin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Polarization Key"; Value = "POLARIZED HOUSING"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=4.09, 10=3.6, 100=2.8634, 1000=2.37249 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Current (Signal)"; Value = "6A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Reach SVHC Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Reference Standard"; Value = "UL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Reliability"; Value = "COMMERCIAL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Shell Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "8423"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "23-0039291188-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Terminal Length"; Value = "0.138inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Terminal Pitch"; Value = "4.191mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Withdrawl Force-Min"; Value = "3.1136N"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ELEV_1 Pin=C30-1
+Added Pin To Net: NetName=GND Pin=C30-2
+Added Pin To Net: NetName=A_HOME Pin=C31-1
+Added Pin To Net: NetName=GND Pin=C31-2
+Added Pin To Net: NetName=TILT_1 Pin=C32-1
+Added Pin To Net: NetName=GND Pin=C32-2
+Added Pin To Net: NetName=TILT_2 Pin=C33-1
+Added Pin To Net: NetName=GND Pin=C33-2
+Added Pin To Net: NetName=TILT_3 Pin=C34-1
+Added Pin To Net: NetName=GND Pin=C34-2
+Added Pin To Net: NetName=TILT_4 Pin=C35-1
+Added Pin To Net: NetName=GND Pin=C35-2
+Added Pin To Net: NetName=TILT_5 Pin=C36-1
+Added Pin To Net: NetName=GND Pin=C36-2
+Added Pin To Net: NetName=TILT_6 Pin=C37-1
+Added Pin To Net: NetName=GND Pin=C37-2
+Added Pin To Net: NetName=ELEV_2 Pin=C38-1
+Added Pin To Net: NetName=GND Pin=C38-2
+Added Pin To Net: NetName=TILT_1 Pin=J7-1
+Added Pin To Net: NetName=TILT_2 Pin=J7-2
+Added Pin To Net: NetName=TILT_3 Pin=J7-3
+Added Pin To Net: NetName=TILT_4 Pin=J7-4
+Added Pin To Net: NetName=TILT_5 Pin=J7-5
+Added Pin To Net: NetName=TILT_6 Pin=J7-6
+Added Pin To Net: NetName=ELEV_1 Pin=J7-7
+Added Pin To Net: NetName=ELEV_2 Pin=J7-8
+Added Pin To Net: NetName=A_HOME Pin=J7-9
+Added Pin To Net: NetName=GND Pin=J7-10
+Added Pin To Net: NetName=GND Pin=J7-11
+Added Pin To Net: NetName=GND Pin=J7-12
+Added Pin To Net: NetName=GND Pin=J7-13
+Added Pin To Net: NetName=GND Pin=J7-14
+Added Pin To Net: NetName=GND Pin=J7-15
+Added Pin To Net: NetName=GND Pin=J7-16
+Added Pin To Net: NetName=GND Pin=J7-17
+Added Pin To Net: NetName=GND Pin=J7-18
+Added Pin To Net: NetName=ELEV_1 Pin=R51-1
+Added Pin To Net: NetName=3V3 Pin=R51-2
+Added Pin To Net: NetName=A_HOME Pin=R52-1
+Added Pin To Net: NetName=3V3 Pin=R52-2
+Added Pin To Net: NetName=TILT_1 Pin=R53-1
+Added Pin To Net: NetName=3V3 Pin=R53-2
+Added Pin To Net: NetName=TILT_2 Pin=R54-1
+Added Pin To Net: NetName=3V3 Pin=R54-2
+Added Pin To Net: NetName=TILT_3 Pin=R55-1
+Added Pin To Net: NetName=3V3 Pin=R55-2
+Added Pin To Net: NetName=TILT_4 Pin=R60-1
+Added Pin To Net: NetName=3V3 Pin=R60-2
+Added Pin To Net: NetName=TILT_5 Pin=R61-1
+Added Pin To Net: NetName=3V3 Pin=R61-2
+Added Pin To Net: NetName=TILT_6 Pin=R62-1
+Added Pin To Net: NetName=3V3 Pin=R62-2
+Added Pin To Net: NetName=ELEV_2 Pin=R63-1
+Added Pin To Net: NetName=3V3 Pin=R63-2

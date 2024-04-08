@@ -1,0 +1,3 @@
+Added Component: Designator=M3(M4)
+Added Pin To Net: NetName=GND Pin=M3-1
+Added Member To Class: ClassName=RoBeast_Mounting_Shield Member=Component M3 M4 Mounting Screw Hole

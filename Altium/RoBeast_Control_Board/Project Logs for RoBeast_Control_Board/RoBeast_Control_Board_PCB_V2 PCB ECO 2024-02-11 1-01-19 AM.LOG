@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=3V3 Pin=TP47-1
+Removed Pin From Net: NetName=3V3 Pin=TP48-1
+Removed Member From Class: ClassName=RoBeast_uC Member=TP47
+Removed Member From Class: ClassName=RoBeast_uC Member=TP48

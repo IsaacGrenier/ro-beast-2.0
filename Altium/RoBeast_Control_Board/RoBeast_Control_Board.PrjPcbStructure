@@ -1,0 +1,9 @@
+Record=TopLevelDocument|FileName=RoBeast_Current_Sense.SchDoc|SheetNumber=8
+Record=NoMainPathDocument|SourceDocument=RoBeast_Current_Sense.SchDoc|FileName=RoBeast_DC_Brake.SchDoc|SheetNumber=9
+Record=NoMainPathDocument|SourceDocument=RoBeast_Current_Sense.SchDoc|FileName=RoBeast_Driver.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=RoBeast_Current_Sense.SchDoc|FileName=RoBeast_Mounting_Shield.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=RoBeast_Current_Sense.SchDoc|FileName=RoBeast_Positional_Feedback.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=RoBeast_Current_Sense.SchDoc|FileName=RoBeast_Power_Linear.SchDoc|SheetNumber=6
+Record=NoMainPathDocument|SourceDocument=RoBeast_Current_Sense.SchDoc|FileName=RoBeast_Power_Switching.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=RoBeast_Current_Sense.SchDoc|FileName=RoBeast_uC.SchDoc|SheetNumber=7
+Record=NoMainPathDocument|SourceDocument=RoBeast_Current_Sense.SchDoc|FileName=RoBeast_UI.SchDoc|SheetNumber=2

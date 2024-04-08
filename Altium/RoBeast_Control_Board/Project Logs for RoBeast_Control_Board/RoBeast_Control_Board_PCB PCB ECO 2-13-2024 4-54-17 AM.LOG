@@ -1,0 +1,7 @@
+Added Pin To Net: NetName=DC_BRAKE_SIG Pin=U11-27
+Added Pin To Net: NetName=SPARE_1 Pin=U11-28
+Added Net: Name=SPARE_1
+Added Pin To Net: NetName=SPARE_2 Pin=U11-2
+Added Net: Name=SPARE_2
+Added Pin To Net: NetName=SPARE_3 Pin=U11-48
+Added Net: Name=SPARE_3

@@ -1,0 +1,146 @@
+Removed Pin From Net: NetName=GND Pin=C30-1
+Removed Pin From Net: NetName=ELEV_1 Pin=C30-2
+Removed Pin From Net: NetName=GND Pin=C31-1
+Removed Pin From Net: NetName=A_HOME Pin=C31-2
+Removed Pin From Net: NetName=GND Pin=C32-1
+Removed Pin From Net: NetName=TILT_1 Pin=C32-2
+Removed Pin From Net: NetName=GND Pin=C33-1
+Removed Pin From Net: NetName=TILT_2 Pin=C33-2
+Removed Pin From Net: NetName=GND Pin=C34-1
+Removed Pin From Net: NetName=TILT_3 Pin=C34-2
+Removed Pin From Net: NetName=GND Pin=C35-1
+Removed Pin From Net: NetName=TILT_4 Pin=C35-2
+Removed Pin From Net: NetName=GND Pin=C36-1
+Removed Pin From Net: NetName=TILT_5 Pin=C36-2
+Removed Pin From Net: NetName=GND Pin=C37-1
+Removed Pin From Net: NetName=TILT_6 Pin=C37-2
+Removed Pin From Net: NetName=GND Pin=C38-1
+Removed Pin From Net: NetName=ELEV_2 Pin=C38-2
+Removed Pin From Net: NetName=ELEV_1 Pin=J7-2
+Removed Pin From Net: NetName=A_HOME Pin=J8-2
+Removed Pin From Net: NetName=TILT_1 Pin=J9-2
+Removed Pin From Net: NetName=TILT_2 Pin=J10-2
+Removed Pin From Net: NetName=TILT_3 Pin=J11-2
+Removed Pin From Net: NetName=TILT_4 Pin=J12-2
+Removed Pin From Net: NetName=TILT_5 Pin=J13-2
+Removed Pin From Net: NetName=TILT_6 Pin=J14-2
+Removed Pin From Net: NetName=ELEV_2 Pin=J15-2
+Removed Pin From Net: NetName=3V3 Pin=R46-2
+Removed Pin From Net: NetName=3V3 Pin=R47-2
+Removed Pin From Net: NetName=3V3 Pin=R48-2
+Removed Pin From Net: NetName=3V3 Pin=R49-2
+Removed Pin From Net: NetName=3V3 Pin=R50-2
+Removed Pin From Net: NetName=GND Pin=R51-1
+Removed Pin From Net: NetName=ELEV_1 Pin=R51-2
+Removed Pin From Net: NetName=GND Pin=R52-1
+Removed Pin From Net: NetName=A_HOME Pin=R52-2
+Removed Pin From Net: NetName=GND Pin=R53-1
+Removed Pin From Net: NetName=TILT_1 Pin=R53-2
+Removed Pin From Net: NetName=GND Pin=R54-1
+Removed Pin From Net: NetName=TILT_2 Pin=R54-2
+Removed Pin From Net: NetName=GND Pin=R55-1
+Removed Pin From Net: NetName=TILT_3 Pin=R55-2
+Removed Pin From Net: NetName=3V3 Pin=R56-2
+Removed Pin From Net: NetName=3V3 Pin=R57-2
+Removed Pin From Net: NetName=3V3 Pin=R58-2
+Removed Pin From Net: NetName=3V3 Pin=R59-2
+Removed Pin From Net: NetName=GND Pin=R60-1
+Removed Pin From Net: NetName=TILT_4 Pin=R60-2
+Removed Pin From Net: NetName=GND Pin=R61-1
+Removed Pin From Net: NetName=TILT_5 Pin=R61-2
+Removed Pin From Net: NetName=GND Pin=R62-1
+Removed Pin From Net: NetName=TILT_6 Pin=R62-2
+Removed Pin From Net: NetName=GND Pin=R63-1
+Removed Pin From Net: NetName=ELEV_2 Pin=R63-2
+Change Component Footprint: Designator=J7 Old Footprint=26-01-3114 New Footprint=0039291188
+Change Component Comment : Designator=J7 Old Comment=2 Pin Connector New Comment=18 Pin Connector
+Change Component Comment : Designator=R82 Old Comment=15mR New Comment=20mR
+Change Component Comment : Designator=R84 Old Comment=15mR New Comment=20mR
+Change component parameters: Designator = "R82" ("R82"); Footprint = "0805"; UniqueID = "\PRIDGXHS" ("\PRIDGXHS")
+Change component parameters (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.octopart.com/ERJ-6CWDR020V-Panasonic-datasheet-68299093.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.octopart.com/ERJ-6CWDR020V-Panasonic-datasheet-68299093.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4Description"; Value = "https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4URL"; Value = "https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ERJ-6CWDR020V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0.61, 10=0.427, 25=0.3652, 50=0.3176, 100=0.2488, 250=0.22764, 500=0.1853, 1000=0.14697 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "1997"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "P124408CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R84" ("R84"); Footprint = "0805"; UniqueID = "\YRREXIWY" ("\YRREXIWY")
+Change component parameters (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.octopart.com/ERJ-6CWDR020V-Panasonic-datasheet-68299093.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.octopart.com/ERJ-6CWDR020V-Panasonic-datasheet-68299093.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4Description"; Value = "https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4URL"; Value = "https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ERJ-6CWDR020V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0.61, 10=0.427, 25=0.3652, 50=0.3176, 100=0.2488, 250=0.22764, 500=0.1853, 1000=0.14697 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "1997"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "P124408CT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ELEV_1 Pin=C30-1
+Added Pin To Net: NetName=GND Pin=C30-2
+Added Pin To Net: NetName=A_HOME Pin=C31-1
+Added Pin To Net: NetName=GND Pin=C31-2
+Added Pin To Net: NetName=TILT_1 Pin=C32-1
+Added Pin To Net: NetName=GND Pin=C32-2
+Added Pin To Net: NetName=TILT_2 Pin=C33-1
+Added Pin To Net: NetName=GND Pin=C33-2
+Added Pin To Net: NetName=TILT_3 Pin=C34-1
+Added Pin To Net: NetName=GND Pin=C34-2
+Added Pin To Net: NetName=TILT_4 Pin=C35-1
+Added Pin To Net: NetName=GND Pin=C35-2
+Added Pin To Net: NetName=TILT_5 Pin=C36-1
+Added Pin To Net: NetName=GND Pin=C36-2
+Added Pin To Net: NetName=TILT_6 Pin=C37-1
+Added Pin To Net: NetName=GND Pin=C37-2
+Added Pin To Net: NetName=ELEV_2 Pin=C38-1
+Added Pin To Net: NetName=GND Pin=C38-2
+Added Pin To Net: NetName=TILT_1 Pin=J7-1
+Added Pin To Net: NetName=TILT_2 Pin=J7-2
+Added Pin To Net: NetName=TILT_3 Pin=J7-3
+Added Pin To Net: NetName=TILT_4 Pin=J7-4
+Added Pin To Net: NetName=TILT_5 Pin=J7-5
+Added Pin To Net: NetName=TILT_6 Pin=J7-6
+Added Pin To Net: NetName=ELEV_1 Pin=J7-7
+Added Pin To Net: NetName=ELEV_2 Pin=J7-8
+Added Pin To Net: NetName=A_HOME Pin=J7-9
+Added Pin To Net: NetName=GND Pin=J7-10
+Added Pin To Net: NetName=GND Pin=J7-11
+Added Pin To Net: NetName=GND Pin=J7-12
+Added Pin To Net: NetName=GND Pin=J7-13
+Added Pin To Net: NetName=GND Pin=J7-14
+Added Pin To Net: NetName=GND Pin=J7-15
+Added Pin To Net: NetName=GND Pin=J7-16
+Added Pin To Net: NetName=GND Pin=J7-17
+Added Pin To Net: NetName=GND Pin=J7-18
+Added Pin To Net: NetName=ELEV_1 Pin=R51-1
+Added Pin To Net: NetName=3V3 Pin=R51-2
+Added Pin To Net: NetName=A_HOME Pin=R52-1
+Added Pin To Net: NetName=3V3 Pin=R52-2
+Added Pin To Net: NetName=TILT_1 Pin=R53-1
+Added Pin To Net: NetName=3V3 Pin=R53-2
+Added Pin To Net: NetName=TILT_2 Pin=R54-1
+Added Pin To Net: NetName=3V3 Pin=R54-2
+Added Pin To Net: NetName=TILT_3 Pin=R55-1
+Added Pin To Net: NetName=3V3 Pin=R55-2
+Added Pin To Net: NetName=TILT_4 Pin=R60-1
+Added Pin To Net: NetName=3V3 Pin=R60-2
+Added Pin To Net: NetName=TILT_5 Pin=R61-1
+Added Pin To Net: NetName=3V3 Pin=R61-2
+Added Pin To Net: NetName=TILT_6 Pin=R62-1
+Added Pin To Net: NetName=3V3 Pin=R62-2
+Added Pin To Net: NetName=ELEV_2 Pin=R63-1
+Added Pin To Net: NetName=3V3 Pin=R63-2

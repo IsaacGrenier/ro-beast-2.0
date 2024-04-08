@@ -1,0 +1,16 @@
+Added Pin To Net: NetName=eENBL Pin=U11-2
+Added Pin To Net: NetName=eRES Pin=U11-6
+Added Pin To Net: NetName=eSLP Pin=U11-7
+Added Pin To Net: NetName=rENBL Pin=U11-9
+Added Pin To Net: NetName=rSLP Pin=U11-10
+Added Pin To Net: NetName=rRES Pin=U11-11
+Added Pin To Net: NetName=DC_BRAKE_STATUS Pin=U11-12
+Added Pin To Net: NetName=TILT_1 Pin=U11-15
+Added Pin To Net: NetName=TILT_2 Pin=U11-16
+Added Pin To Net: NetName=TILT_3 Pin=U11-17
+Added Pin To Net: NetName=TILT_4 Pin=U11-20
+Added Pin To Net: NetName=TILT_5 Pin=U11-21
+Added Pin To Net: NetName=TILT_6 Pin=U11-22
+Added Pin To Net: NetName=ELEV_1 Pin=U11-23
+Added Pin To Net: NetName=ELEV_2 Pin=U11-24
+Added Pin To Net: NetName=A_HOME Pin=U11-26

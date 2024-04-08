@@ -1,0 +1,57 @@
+Component Name : DSPIC33CK64MP505T-I/PT
+
+Part Count : 2
+
+Part : U?
+     Pins - (Normal) : 0
+          Hidden Pins : 
+
+Part : U?
+     Pins - (Normal) : 45
+          RP46/PWM1H/RB141              Passive
+          RP47/PWM1L/RB152              Passive
+          RP60/PWM8H/RC123              Passive
+          RP61/PWM8L/RC124              Passive
+          /MCLR          5              Passive
+          ANN2/RP77/RD13 6              Passive
+          AN12/ANN0/RP48/RC07              Passive
+          OA1OUT/AN0/CMP1A/IBIAS0/RA08              Passive
+          OA1IN-/ANA1/RA19              Passive
+          OAIN+/AN9/RA2  10             Passive
+          RACOUT1/AN3/CMP1C/RA311             Passive
+          AVdd           13             Passive
+          AVss           14             Passive
+          OA3IN-/AN13/CMP1B/ISRC0/RP49/RC115             Passive
+          OA3IN+/AN14/CMP2B/ISRC1/RP50/RC216             Passive
+          AN17/ANN1/IBIAS1/RP54/RC617             Passive
+          Vdd            18             Passive
+          Vss            19             Passive
+          AN15/CMP2A/IBIAS2/RP51/20             Passive
+          AN1/C2IN1+/RA1 20             Passive
+          PGED3/Vref-/AN2/C2IN1-//SS1/RPI32/CTED2/RB021             Passive
+          PGEC3/Vref+/AN3/OA1OUT/RPI33/CTED1/RB122             Passive
+          PGEC1/AN4/C1IN1+/RPI34/RB223             Passive
+          PGED1/AN5/C1IN1-/RP35/RB324             Passive
+          AN6/OA3OUT/C4IN1+/OCFB/RC025             Passive
+          AN7/C3IN1-/C4IN1-/RC126             Passive
+          AN8/C3IN1+//U1RTS/BCLK1/FLT3/RC227             Passive
+          Vdd            28             Passive
+          Vss            29             Passive
+          OSC1/CLKI/RA2  30             Passive
+          OSC2/CLKO/RA3  31             Passive
+          SDA2/RPI24/RA8 32             Passive
+          FLT32/SCL2/RP36/RB433             Passive
+          CVref2o/SDO1/RP20/T1CK/RA434             Passive
+          SCK1/RPI51/RC3 36             Passive
+          SDI1/RPI25/RA9 35             Passive
+          SDA1/RPI52/RC4 37             Passive
+          SCL1/RPI53/RC5 38             Passive
+          Vss            39             Passive
+          Vdd            40             Passive
+          PGED2/ASDA2/RP37/RB541             Passive
+          PGEC2/ASCL2/RP38/RB642             Passive
+          RP39/INT0/RB7  43             Passive
+          TCK/CVref1o/ASCL1/RP40/T4CK/RB844             Passive
+          OA3OUT/AN4/CMP3B/IBIAS3/RA412             Passive
+          Hidden Pins : 
+

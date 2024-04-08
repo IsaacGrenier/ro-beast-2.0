@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=DC_BRAKE_SIG Pin=TP56-1
+Added Member To Class: ClassName=RoBeast_Mounting_Shield Member=Component M3 M4 Mounting Screw Hole
+Added Room: Name=RoBeast_UI

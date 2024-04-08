@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [RoBeast_Control_Board.PrjPcb]
+   Generated File[RoBeast_Control_Board_PCB.TXT]
+   Generated File[RoBeast_Control_Board_PCB-RectHoles.TXT]
+   Generated File[RoBeast_Control_Board_PCB.LDP]
+   Generated File[RoBeast_Control_Board_PCB.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 5:40:56 AM On 2/13/2024

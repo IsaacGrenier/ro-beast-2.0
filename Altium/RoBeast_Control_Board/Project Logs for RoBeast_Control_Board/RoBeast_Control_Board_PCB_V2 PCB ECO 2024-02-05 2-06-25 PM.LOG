@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GND Pin=LED5-2
+Removed Pin From Net: NetName=CCT_24V Pin=R3-1
+Removed Pin From Net: NetName=DC_BRAKE_PWR Pin=R3-2
+Removed Pin From Net: NetName=DC_BRAKE_PWR Pin=R10-1
+Removed Pin From Net: NetName=DC_BRAKE_PWR Pin=TP57-1
+Removed Member From Class: ClassName=RoBeast_DC_Brake Member=R3
+Removed Member From Class: ClassName=RoBeast_DC_Brake Member=TP57
+Added Pin To Net: NetName=DC_BRAKE_PWR Pin=LED5-2
+Added Pin To Net: NetName=CCT_24V Pin=R10-1

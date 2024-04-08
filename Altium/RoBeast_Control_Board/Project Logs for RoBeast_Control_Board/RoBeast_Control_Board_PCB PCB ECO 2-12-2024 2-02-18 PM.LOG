@@ -1,0 +1,24 @@
+Added Component: Designator=R59(0805)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Vishay Dale"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RCC08054K70FKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.15, 10=0.069, 50=0.0454, 100=0.0385, 500=0.0271, 1000=0.0236 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "96612"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "541-RCC08054K70FKEACT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R105(0805)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Vishay Dale"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RCC08054K70FKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.15, 10=0.069, 50=0.0454, 100=0.0385, 500=0.0271, 1000=0.0236 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "96612"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "541-RCC08054K70FKEACT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3 Pin=R59-1
+Added Pin To Net: NetName=SDA Pin=R59-2
+Added Pin To Net: NetName=3V3 Pin=R105-1
+Added Pin To Net: NetName=SCL Pin=R105-2
+Added Member To Class: ClassName=RoBeast_uC Member=Component R59 4.7kR
+Added Member To Class: ClassName=RoBeast_uC Member=Component R105 4.7kR

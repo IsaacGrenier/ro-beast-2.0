@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=DRV_STEP Pin=U11-48
+Added Pin To Net: NetName=DRV_DIR Pin=U11-48

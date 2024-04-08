@@ -1,0 +1,490 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD21\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2024-02-16</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9:18:35 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc" class="file"><acronym title="C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc">C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">32</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Waived Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">11</td></tr>
+</table>
+</td>
+</table><a name="ID3HFAJQ2J0Z2PDSIEU12DIR2X1NF2R0INFZSFUPIDNZHAZIX4QQUG"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDISWSZLQ5O4UAEOS3JUEG14SJIIAJRJ0K5PVTHTLONHEFVYLF4PXF">Clearance Constraint (Gap=0.15mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRSED0LAGJRGDPZGTHRVCWZRHTMGVSFXJ0HDD0NH25L5KZRQU4QVP">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSNPFG3AI0ZBUJRM42DMBQL2JRFK1MO1BHOUHE5GPGWV0UHTLA1HH">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGEX4HNYZF3BBGOKP0DPGAOF1WK1OMRGDRVL4LCLNFRYR0P0ABEOL">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDF5E5F4S0TUMDFI5VBNQUJQMQQJVCLWWPKUN02RPIUZWSKPHJP1NO">Width Constraint (Min=0.1mm) (Max=1mm) (Preferred=0.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKLJVHWT05TBYHQVAACVCDLJ2WKC1NXS3LK5LDGOTKNKZ50P1Q3JM">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPWEZVK500OAQCXR14JQJTP51CBTGLHJSAUIXAUBNXSFVRUSUH3F">Minimum Annular Ring (Minimum=0.15mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBFLY4IXY2QETPFM03HHGWCKRVGWOAFT4L50HLBJGJSZ0T5VOSRDG">Hole Size Constraint (Min=0.3mm) (Max=6.2mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLXCX1SHDXBSZHP3AIKGSIZQFFC33EFLYM0UXP3LOGIX5BC54UCTD">Hole To Hole Clearance (Gap=0.41mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDW20NXRZUU02EGVT41UFFH1O5XCYSEK2UKPEEXZNE5PYOO2MCQPNG">Minimum Solder Mask Sliver (Gap=0.102mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJQ2OTQVOO015B5LZH23V2POV40SX241CVZ4EECUSQQAGWGSZF4C">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">8</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMK1UUKMTSWDXJEK1AYUJXSDPUF0ZB44YTNXAYTFHJRA505NK40KC">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">24</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPJHGK5N1I45UOQOKUGANJ5Z5LP5TJVMQAS0LGO3WXODMNLJ0SEN">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4KB4Z1ZGZ2YJNPWUEXDWMFTJVFYNNEGCWOZ5MBHE25C341WGAFEK">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID20ZEMGLS00NYJRRVBFHXWS1FCDPAFIXEHAGAB3FIHMQYS5RCW2SB">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">32</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Waived Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1BROJVKJG0OVLBB3QXSA33U0JOYUA5JGZASL0SEB0GOFMTIDM5HO">Minimum Solder Mask Sliver (Gap=0.102mm) (All),(All)</a></td>
+<td class="column2">11</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">11</td>
+</tr>
+</table><br><a name="IDDPEZY4ERAVBGLY3D3QWZNJWOQOQAMMQ3F4TSEQD14GWHFLVPABP"><h2>Rule Violations</h2></a><a name="IDJQ2OTQVOO015B5LZH23V2POV40SX241CVZ4EECUSQQAGWGSZF4C"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3965.545mil|Location2.X=3976.795mil|Location1.Y=4361.944mil|Location2.Y=4373.194mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3965.545mil|Location2.X=3976.795mil|Location1.Y=4361.944mil|Location2.Y=4373.194mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.175mm &lt; 0.254mm) Between Arc (78.7mm,99.7mm) on Top Overlay And Pad TP58-1(78.5mm,107.5mm) on SIG [Top Overlay] to [Top Solder] clearance [0.175mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3723.223mil|Location2.X=3730.889mil|Location1.Y=533.887mil|Location2.Y=541.554mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3723.223mil|Location2.X=3730.889mil|Location1.Y=533.887mil|Location2.Y=541.554mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.254mm) Between Pad J4-5(72.46mm,10.5mm) on Multi-Layer And Region (0 hole(s)) Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4595.365mil|Location2.X=4606.615mil|Location1.Y=4203.497mil|Location2.Y=4214.747mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4595.365mil|Location2.X=4606.615mil|Location1.Y=4203.497mil|Location2.Y=4214.747mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.225mm &lt; 0.254mm) Between Pad TP37-1(94.5mm,103.5mm) on SIG And Track (93.4mm,102.2mm)(95.8mm,102.2mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.225mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3864.039mil|Location2.X=3875.289mil|Location1.Y=3797.651mil|Location2.Y=3808.901mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3864.039mil|Location2.X=3875.289mil|Location1.Y=3797.651mil|Location2.Y=3808.901mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.162mm &lt; 0.254mm) Between Pad TP39-1(76mm,91mm) on SIG And Text "TP39" (73.911mm,92.234mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.162mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3904.227mil|Location2.X=3915.477mil|Location1.Y=3601.177mil|Location2.Y=3612.427mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3904.227mil|Location2.X=3915.477mil|Location1.Y=3601.177mil|Location2.Y=3612.427mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.179mm &lt; 0.254mm) Between Pad TP40-1(77mm,86mm) on SIG And Text "TP40" (77.74mm,87.253mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.179mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4873.448mil|Location2.X=4884.698mil|Location1.Y=3418.081mil|Location2.Y=3430.734mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4873.448mil|Location2.X=4884.698mil|Location1.Y=3418.081mil|Location2.Y=3430.734mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.149mm &lt; 0.254mm) Between Pad TP42-1(102.5mm,83mm) on SIG And Text "R44" (99.434mm,81.6mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.149mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4261.797mil|Location2.X=4273.047mil|Location1.Y=3129.685mil|Location2.Y=3140.935mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4261.797mil|Location2.X=4273.047mil|Location1.Y=3129.685mil|Location2.Y=3140.935mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.226mm &lt; 0.254mm) Between Pad TP44-1(86mm,74mm) on SIG And Text "R91" (84.034mm,75.3mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.226mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3965.444mil|Location2.X=3976.694mil|Location1.Y=4446.451mil|Location2.Y=4457.701mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3965.444mil|Location2.X=3976.694mil|Location1.Y=4446.451mil|Location2.Y=4457.701mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.116mm &lt; 0.254mm) Between Pad TP58-1(78.5mm,107.5mm) on SIG And Track (77.226mm,108.691mm)(79.626mm,108.691mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.116mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDMK1UUKMTSWDXJEK1AYUJXSDPUF0ZB44YTNXAYTFHJRA505NK40KC"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5113.888mil|Location2.X=5125.138mil|Location1.Y=3532.344mil|Location2.Y=3543.594mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5113.888mil|Location2.X=5125.138mil|Location1.Y=3532.344mil|Location2.Y=3543.594mil|Absolute=True">Silk To Silk Clearance Constraint: (0.179mm &lt; 0.254mm) Between Arc (109.2mm,78.8mm) on Top Overlay And Text "NP1" (105.767mm,85.5mm) on Top Overlay Silk Text to Silk Clearance [0.179mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4237.994mil|Location2.X=4249.244mil|Location1.Y=4090.638mil|Location2.Y=4101.888mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4237.994mil|Location2.X=4249.244mil|Location1.Y=4090.638mil|Location2.Y=4101.888mil|Absolute=True">Silk To Silk Clearance Constraint: (0.196mm &lt; 0.254mm) Between Arc (78.7mm,99.7mm) on Top Overlay And Text "C59" (86.396mm,99.116mm) on Top Overlay Silk Text to Silk Clearance [0.196mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4200.905mil|Location2.X=4212.155mil|Location1.Y=4231.152mil|Location2.Y=4243.682mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4200.905mil|Location2.X=4212.155mil|Location1.Y=4231.152mil|Location2.Y=4243.682mil|Absolute=True">Silk To Silk Clearance Constraint: (0.182mm &lt; 0.254mm) Between Arc (78.7mm,99.7mm) on Top Overlay And Text "R30" (85.423mm,103.207mm) on Top Overlay Silk Text to Silk Clearance [0.182mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4038.236mil|Location2.X=4051.995mil|Location1.Y=4355.224mil|Location2.Y=4366.474mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4038.236mil|Location2.X=4051.995mil|Location1.Y=4355.224mil|Location2.Y=4366.474mil|Absolute=True">Silk To Silk Clearance Constraint: (0.238mm &lt; 0.254mm) Between Arc (78.7mm,99.7mm) on Top Overlay And Text "R92" (81.196mm,106.429mm) on Top Overlay Silk Text to Silk Clearance [0.238mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3116.521mil|Location2.X=3127.771mil|Location1.Y=2406.329mil|Location2.Y=2417.579mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3116.521mil|Location2.X=3127.771mil|Location1.Y=2406.329mil|Location2.Y=2417.579mil|Absolute=True">Silk To Silk Clearance Constraint: (0.172mm &lt; 0.254mm) Between Text "C14" (56.537mm,55.779mm) on Top Overlay And Track (56.1mm,56.9mm)(58.5mm,56.9mm) on Top Overlay Silk Text to Silk Clearance [0.172mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3174.245mil|Location2.X=3185.495mil|Location1.Y=2361.051mil|Location2.Y=2372.301mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3174.245mil|Location2.X=3185.495mil|Location1.Y=2361.051mil|Location2.Y=2372.301mil|Absolute=True">Silk To Silk Clearance Constraint: (0.229mm &lt; 0.254mm) Between Text "C14" (56.537mm,55.779mm) on Top Overlay And Track (57.931mm,55.4mm)(61.431mm,55.4mm) on Top Overlay Silk Text to Silk Clearance [0.229mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3176.143mil|Location2.X=3189.789mil|Location1.Y=2406.329mil|Location2.Y=2417.579mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3176.143mil|Location2.X=3189.789mil|Location1.Y=2406.329mil|Location2.Y=2417.579mil|Absolute=True">Silk To Silk Clearance Constraint: (0.186mm &lt; 0.254mm) Between Text "C14" (56.537mm,55.779mm) on Top Overlay And Track (58.5mm,56.9mm)(58.5mm,60.4mm) on Top Overlay Silk Text to Silk Clearance [0.186mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3569.573mil|Location2.X=3580.823mil|Location1.Y=3237.201mil|Location2.Y=3248.451mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3569.573mil|Location2.X=3580.823mil|Location1.Y=3237.201mil|Location2.Y=3248.451mil|Absolute=True">Silk To Silk Clearance Constraint: (0.228mm &lt; 0.254mm) Between Text "C47" (69.245mm,75.522mm) on Top Overlay And Track (64.561mm,78.032mm)(75.211mm,78.032mm) on Top Overlay Silk Text to Silk Clearance [0.228mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3607.547mil|Location2.X=3618.797mil|Location1.Y=3151.048mil|Location2.Y=3162.298mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3607.547mil|Location2.X=3618.797mil|Location1.Y=3151.048mil|Location2.Y=3162.298mil|Absolute=True">Silk To Silk Clearance Constraint: (0.18mm &lt; 0.254mm) Between Text "C47" (69.245mm,75.522mm) on Top Overlay And Track (69.574mm,73.622mm)(69.574mm,77.122mm) on Top Overlay Silk Text to Silk Clearance [0.18mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3607.547mil|Location2.X=3618.797mil|Location1.Y=3208.782mil|Location2.Y=3220.032mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3607.547mil|Location2.X=3618.797mil|Location1.Y=3208.782mil|Location2.Y=3220.032mil|Absolute=True">Silk To Silk Clearance Constraint: (0.18mm &lt; 0.254mm) Between Text "C47" (69.245mm,75.522mm) on Top Overlay And Track (69.574mm,77.122mm)(71.974mm,77.122mm) on Top Overlay Silk Text to Silk Clearance [0.18mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4282.287mil|Location2.X=4293.537mil|Location1.Y=4079.961mil|Location2.Y=4091.211mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4282.287mil|Location2.X=4293.537mil|Location1.Y=4079.961mil|Location2.Y=4091.211mil|Absolute=True">Silk To Silk Clearance Constraint: (0.154mm &lt; 0.254mm) Between Text "C59" (86.396mm,99.116mm) on Top Overlay And Track (86.7mm,98.05mm)(86.7mm,101.55mm) on Top Overlay Silk Text to Silk Clearance [0.154mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4462.086mil|Location2.X=4473.336mil|Location1.Y=4193.162mil|Location2.Y=4204.412mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4462.086mil|Location2.X=4473.336mil|Location1.Y=4193.162mil|Location2.Y=4204.412mil|Absolute=True">Silk To Silk Clearance Constraint: (0.2mm &lt; 0.254mm) Between Text "C60" (90.715mm,101.15mm) on Top Overlay And Track (89.65mm,102.3mm)(93.15mm,102.3mm) on Top Overlay Silk Text to Silk Clearance [0.2mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4395.111mil|Location2.X=4406.361mil|Location1.Y=3460.794mil|Location2.Y=3472.044mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4395.111mil|Location2.X=4406.361mil|Location1.Y=3460.794mil|Location2.Y=3472.044mil|Absolute=True">Silk To Silk Clearance Constraint: (0.082mm &lt; 0.254mm) Between Text "R32" (90.327mm,83.545mm) on Top Overlay And Track (85.8mm,83.5mm)(89.3mm,83.5mm) on Top Overlay Silk Text to Silk Clearance [0.082mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4395.111mil|Location2.X=4406.361mil|Location1.Y=3461.685mil|Location2.Y=3472.935mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4395.111mil|Location2.X=4406.361mil|Location1.Y=3461.685mil|Location2.Y=3472.935mil|Absolute=True">Silk To Silk Clearance Constraint: (0.077mm &lt; 0.254mm) Between Text "R32" (90.327mm,83.545mm) on Top Overlay And Track (89.3mm,83.5mm)(89.3mm,85.9mm) on Top Overlay Silk Text to Silk Clearance [0.077mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4437.705mil|Location2.X=4448.955mil|Location1.Y=3461.685mil|Location2.Y=3472.935mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4437.705mil|Location2.X=4448.955mil|Location1.Y=3461.685mil|Location2.Y=3472.935mil|Absolute=True">Silk To Silk Clearance Constraint: (0.187mm &lt; 0.254mm) Between Text "R32" (90.327mm,83.545mm) on Top Overlay And Track (90.664mm,83.031mm)(90.664mm,86.531mm) on Top Overlay Silk Text to Silk Clearance [0.187mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4446.301mil|Location2.X=4457.551mil|Location1.Y=3341.765mil|Location2.Y=3353.015mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4446.301mil|Location2.X=4457.551mil|Location1.Y=3341.765mil|Location2.Y=3353.015mil|Absolute=True">Silk To Silk Clearance Constraint: (0.189mm &lt; 0.254mm) Between Text "R33" (90.544mm,80.499mm) on Top Overlay And Track (90.883mm,79.796mm)(90.883mm,82.196mm) on Top Overlay Silk Text to Silk Clearance [0.189mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4446.301mil|Location2.X=4457.551mil|Location1.Y=3409.282mil|Location2.Y=3420.532mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4446.301mil|Location2.X=4457.551mil|Location1.Y=3409.282mil|Location2.Y=3420.532mil|Absolute=True">Silk To Silk Clearance Constraint: (0.191mm &lt; 0.254mm) Between Text "R33" (90.544mm,80.499mm) on Top Overlay And Track (90.883mm,82.196mm)(94.383mm,82.196mm) on Top Overlay Silk Text to Silk Clearance [0.191mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4199.707mil|Location2.X=4210.957mil|Location1.Y=3637.087mil|Location2.Y=3648.337mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4199.707mil|Location2.X=4210.957mil|Location1.Y=3637.087mil|Location2.Y=3648.337mil|Absolute=True">Silk To Silk Clearance Constraint: (0.151mm &lt; 0.254mm) Between Text "R35" (85.404mm,86.828mm) on Top Overlay And Track (81.9mm,88mm)(84.3mm,88mm) on Top Overlay Silk Text to Silk Clearance [0.151mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4199.648mil|Location2.X=4210.898mil|Location1.Y=3674.784mil|Location2.Y=3686.034mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4199.648mil|Location2.X=4210.898mil|Location1.Y=3674.784mil|Location2.Y=3686.034mil|Absolute=True">Silk To Silk Clearance Constraint: (0.148mm &lt; 0.254mm) Between Text "R35" (85.404mm,86.828mm) on Top Overlay And Track (84.3mm,88mm)(84.3mm,91.5mm) on Top Overlay Silk Text to Silk Clearance [0.148mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4623.909mil|Location2.X=4635.159mil|Location1.Y=3414.534mil|Location2.Y=3425.784mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4623.909mil|Location2.X=4635.159mil|Location1.Y=3414.534mil|Location2.Y=3425.784mil|Absolute=True">Silk To Silk Clearance Constraint: (0.073mm &lt; 0.254mm) Between Text "R48" (95.891mm,80.104mm) on Top Overlay And Track (93.474mm,82.459mm)(95.874mm,82.459mm) on Top Overlay Silk Text to Silk Clearance [0.073mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4647.173mil|Location2.X=4660.066mil|Location1.Y=3414.534mil|Location2.Y=3425.784mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4647.173mil|Location2.X=4660.066mil|Location1.Y=3414.534mil|Location2.Y=3425.784mil|Absolute=True">Silk To Silk Clearance Constraint: (0.101mm &lt; 0.254mm) Between Text "R48" (95.891mm,80.104mm) on Top Overlay And Track (95.874mm,82.459mm)(95.874mm,85.959mm) on Top Overlay Silk Text to Silk Clearance [0.101mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4071.587mil|Location2.X=4082.837mil|Location1.Y=4454.189mil|Location2.Y=4465.439mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4071.587mil|Location2.X=4082.837mil|Location1.Y=4454.189mil|Location2.Y=4465.439mil|Absolute=True">Silk To Silk Clearance Constraint: (0.236mm &lt; 0.254mm) Between Text "R92" (81.196mm,106.429mm) on Top Overlay And Track (80.2mm,109mm)(84.8mm,109mm) on Top Overlay Silk Text to Silk Clearance [0.236mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4718.066mil|Location2.X=4729.316mil|Location1.Y=3604.284mil|Location2.Y=3615.534mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4718.066mil|Location2.X=4729.316mil|Location1.Y=3604.284mil|Location2.Y=3615.534mil|Absolute=True">Silk To Silk Clearance Constraint: (0.217mm &lt; 0.254mm) Between Text "R95" (97.433mm,87.167mm) on Top Overlay And Track (97.8mm,86.7mm)(97.8mm,89.1mm) on Top Overlay Silk Text to Silk Clearance [0.217mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4718.066mil|Location2.X=4729.316mil|Location1.Y=3680.376mil|Location2.Y=3691.626mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4718.066mil|Location2.X=4729.316mil|Location1.Y=3680.376mil|Location2.Y=3691.626mil|Absolute=True">Silk To Silk Clearance Constraint: (0.217mm &lt; 0.254mm) Between Text "R95" (97.433mm,87.167mm) on Top Overlay And Track (97.8mm,89.1mm)(101.3mm,89.1mm) on Top Overlay Silk Text to Silk Clearance [0.217mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID2GQFBS13HYVOLAJ3RYUVQ0LPDFFPSRWHGEYHZJEQM0SUSLGXVHSE"><h2>Waived Violations</h2></a><a name="ID1BROJVKJG0OVLBB3QXSA33U0JOYUA5JGZASL0SEB0GOFMTIDM5HO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Minimum Solder Mask Sliver (Gap=0.102mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2489.059mil|Location2.X=2494.309mil|Location1.Y=2423.307mil|Location2.Y=2428.557mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2489.059mil|Location2.X=2494.309mil|Location1.Y=2423.307mil|Location2.Y=2428.557mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.084mm &lt; 0.102mm) Between Pad C2-2(40.9mm,56.5mm) on SIG And Via (40.924mm,57.738mm) from SIG to GND3 [Top Solder] Mask Sliver [0.085mm]</acronym></a><br>Waived by Vardaan Malhotra at 2024-02-13 4:29:19 AM<br>Same net</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3661.027mil|Location2.X=3666.277mil|Location1.Y=3791.808mil|Location2.Y=3797.058mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3661.027mil|Location2.X=3666.277mil|Location1.Y=3791.808mil|Location2.Y=3797.058mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.004mm &lt; 0.102mm) Between Pad C49-2(70.983mm,91mm) on SIG And Via (70.692mm,92.458mm) from SIG to GND3 [Top Solder] Mask Sliver [0.004mm]</acronym></a><br>Waived by Vardaan Malhotra at 2024-02-13 4:36:54 AM<br>Same net</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3503.877mil|Location2.X=3509.127mil|Location1.Y=3773.715mil|Location2.Y=3778.965mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3503.877mil|Location2.X=3509.127mil|Location1.Y=3773.715mil|Location2.Y=3778.965mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.102mm) Between Pad C50-2(66.773mm,90.539mm) on SIG And Via (66.7mm,92mm) from SIG to GND3 [Top Solder] Mask Sliver [0.007mm]</acronym></a><br>Waived by Vardaan Malhotra at 2024-02-13 4:29:51 AM<br>Same net</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4272.269mil|Location2.X=4277.519mil|Location1.Y=4259.781mil|Location2.Y=4265.031mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4272.269mil|Location2.X=4277.519mil|Location1.Y=4259.781mil|Location2.Y=4265.031mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.012mm &lt; 0.102mm) Between Pad R30-1(86.75mm,103.5mm) on SIG And Via (85.609mm,103.741mm) from SIG to GND3 [Top Solder] Mask Sliver [0.012mm]</acronym></a><br>Waived by Vardaan Malhotra at 2024-02-13 4:30:50 AM<br>Same net</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4184.979mil|Location2.X=4190.229mil|Location1.Y=3428.947mil|Location2.Y=3434.197mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4184.979mil|Location2.X=4190.229mil|Location1.Y=3428.947mil|Location2.Y=3434.197mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.071mm &lt; 0.102mm) Between Pad R43-2(84mm,83.2mm) on SIG And Via (84mm,82mm) from SIG to GND3 [Top Solder] Mask Sliver [0.071mm]</acronym></a><br>Waived by Vardaan Malhotra at 2024-02-13 4:31:11 AM<br>Same net</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4573.758mil|Location2.X=4579.008mil|Location1.Y=4447.155mil|Location2.Y=4452.405mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4573.758mil|Location2.X=4579.008mil|Location1.Y=4447.155mil|Location2.Y=4452.405mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.102mm) Between Pad R86-2(93mm,108.5mm) on SIG And Via (94.5mm,108.5mm) from SIG to GND3 [Top Solder] Mask Sliver [0.046mm]</acronym></a><br>Waived by Vardaan Malhotra at 2024-02-13 4:31:26 AM<br>Same net</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4622.971mil|Location2.X=4628.221mil|Location1.Y=4447.155mil|Location2.Y=4452.405mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4622.971mil|Location2.X=4628.221mil|Location1.Y=4447.155mil|Location2.Y=4452.405mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.102mm) Between Pad R88-2(96mm,108.5mm) on SIG And Via (94.5mm,108.5mm) from SIG to GND3 [Top Solder] Mask Sliver [0.046mm]</acronym></a><br>Waived by Vardaan Malhotra at 2024-02-13 4:31:30 AM<br>Same net</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2255.845mil|Location2.X=2261.095mil|Location1.Y=3394.006mil|Location2.Y=3399.256mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2255.845mil|Location2.X=2261.095mil|Location1.Y=3394.006mil|Location2.Y=3399.256mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.096mm &lt; 0.102mm) Between Via (35mm,81mm) from SIG to GND3 And Via (35mm,82.5mm) from SIG to GND3 [Top Solder] Mask Sliver [0.096mm] / [Bottom Solder] Mask Sliver [0.096mm]</acronym></a><br>Waived by Vardaan Malhotra at 2024-02-13 4:33:37 AM<br>Same net</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2531.586mil|Location2.X=2536.836mil|Location1.Y=3556.525mil|Location2.Y=3561.775mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2531.586mil|Location2.X=2536.836mil|Location1.Y=3556.525mil|Location2.Y=3561.775mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.096mm &lt; 0.102mm) Between Via (41.354mm,85.878mm) from SIG to GND3 And Via (42.654mm,85.878mm) from SIG to GND3 [Top Solder] Mask Sliver [0.096mm] / [Bottom Solder] Mask Sliver [0.096mm]</acronym></a><br>Waived by Vardaan Malhotra at 2024-02-12 6:12:05 PM<br>Close to same net.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3490.097mil|Location2.X=3495.347mil|Location1.Y=2482.588mil|Location2.Y=2487.838mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3490.097mil|Location2.X=3495.347mil|Location1.Y=2482.588mil|Location2.Y=2487.838mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.096mm &lt; 0.102mm) Between Via (65.7mm,58.6mm) from SIG to GND3 And Via (67mm,58.6mm) from SIG to GND3 [Top Solder] Mask Sliver [0.096mm] / [Bottom Solder] Mask Sliver [0.096mm]</acronym></a><br>Waived by Vardaan Malhotra at 2024-02-12 6:11:37 PM<br>Close to same net.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3541.278mil|Location2.X=3546.528mil|Location1.Y=2482.588mil|Location2.Y=2487.838mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vmalhotr\Downloads\RoBeast_Control_Board\RoBeast_Control_Board\RoBeast_Control_Board_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3541.278mil|Location2.X=3546.528mil|Location1.Y=2482.588mil|Location2.Y=2487.838mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.096mm &lt; 0.102mm) Between Via (67mm,58.6mm) from SIG to GND3 And Via (68.3mm,58.6mm) from SIG to GND3 [Top Solder] Mask Sliver [0.096mm] / [Bottom Solder] Mask Sliver [0.096mm]</acronym></a><br>Waived by Vardaan Malhotra at 2024-02-12 6:11:50 PM<br>Close to same net.</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

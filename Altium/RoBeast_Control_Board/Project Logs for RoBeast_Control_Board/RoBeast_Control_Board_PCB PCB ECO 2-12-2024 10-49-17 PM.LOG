@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=eRES Pin=U11-6
+Removed Pin From Net: NetName=eSLP Pin=U11-7
+Added Pin To Net: NetName=eSLP Pin=U11-6
+Added Pin To Net: NetName=eRES Pin=U11-7

@@ -1,0 +1,40 @@
+Change Component Footprint: Designator=R28 Old Footprint=1206 New Footprint=0805
+Change Component Footprint: Designator=R31 Old Footprint=1206 New Footprint=0805
+Change Component Footprint: Designator=R36 Old Footprint=1206 New Footprint=0805
+Change Component Footprint: Designator=R37 Old Footprint=1206 New Footprint=0805
+Change component parameters: Designator = "R28" ("R28"); Footprint = "1206"; UniqueID = "\AIEYDZVC" ("\AIEYDZVC")
+Change component parameters (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Thin Film Tech"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "D1WEL0805CR200F-T5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0.46, 10=0.337, 25=0.2704, 50=0.2008, 100=0.1417, 250=0.1262, 500=0.10818, 1000=0.08242 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "11324"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "4463-D1WEL0805CR200F-T5CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R31" ("R31"); Footprint = "1206"; UniqueID = "\TNIRZLTH" ("\TNIRZLTH")
+Change component parameters (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Thin Film Tech"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "D1WEL0805CR200F-T5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0.46, 10=0.337, 25=0.2704, 50=0.2008, 100=0.1417, 250=0.1262, 500=0.10818, 1000=0.08242 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "11324"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "4463-D1WEL0805CR200F-T5CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R36" ("R36"); Footprint = "1206"; UniqueID = "\BJWOSMZN" ("\BJWOSMZN")
+Change component parameters (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Thin Film Tech"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "D1WEL0805CR200F-T5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0.46, 10=0.337, 25=0.2704, 50=0.2008, 100=0.1417, 250=0.1262, 500=0.10818, 1000=0.08242 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "11324"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "4463-D1WEL0805CR200F-T5CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R37" ("R37"); Footprint = "1206"; UniqueID = "\AGWRODKI" ("\AGWRODKI")
+Change component parameters (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Thin Film Tech"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "D1WEL0805CR200F-T5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0.46, 10=0.337, 25=0.2704, 50=0.2008, 100=0.1417, 250=0.1262, 500=0.10818, 1000=0.08242 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "11324"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "4463-D1WEL0805CR200F-T5CT-ND"; VariantName = "[No Variations]"

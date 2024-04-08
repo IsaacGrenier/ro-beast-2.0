@@ -1,0 +1,12 @@
+Added Pin To Net: NetName=NetC7_2 Pin=TP5-1
+Added Pin To Net: NetName=NetC6_2 Pin=TP6-1
+Added Pin To Net: NetName=NetC7_2 Pin=U4-8
+Added Pin To Net: NetName=NetC6_2 Pin=U4-9
+Change Net Name : Old Net Name=NetC6_2 New Net Name=USB_N
+Change Net Name : Old Net Name=NetC7_2 New Net Name=USB_P
+Added Pin To Net: NetName=USB_N_2 Pin=R6-2
+Added Net: Name=USB_N_2
+Added Pin To Net: NetName=USB_P_2 Pin=R8-1
+Added Net: Name=USB_P_2
+Add Differential Pair: Number of nets in differential pair USB_N_2 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair USB_P_2 is 1 instead of 2

@@ -1,0 +1,12 @@
+Change Component Description : Designator=R82 Old Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL New Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL | TE Connectivity RLC73PH2BR10FTD
+Change Component Description : Designator=R84 Old Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL New Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL | TE Connectivity RLC73PH2BR10FTD
+Added Pin To Net: NetName=r_RES Pin=R91-1
+Added Pin To Net: NetName=GND Pin=R91-2
+Added Pin To Net: NetName=r_RES Pin=R102-1
+Added Pin To Net: NetName=3V3 Pin=R102-2
+Added Pin To Net: NetName=e_RES Pin=R103-1
+Added Pin To Net: NetName=3V3 Pin=R103-2
+Added Pin To Net: NetName=e_RES Pin=R104-1
+Added Pin To Net: NetName=GND Pin=R104-2
+Added Pin To Net: NetName=r_RES Pin=TP57-1
+Added Pin To Net: NetName=e_RES Pin=TP62-1

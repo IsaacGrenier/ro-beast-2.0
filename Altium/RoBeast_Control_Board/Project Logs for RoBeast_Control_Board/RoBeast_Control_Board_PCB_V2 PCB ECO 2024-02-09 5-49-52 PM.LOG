@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=uC_RX Pin=R10-1
+Removed Pin From Net: NetName=uC_TX Pin=R105-2
+Removed Member From Class: ClassName=RoBeast_UI Member=R10
+Removed Member From Class: ClassName=RoBeast_UI Member=R105
+Added Pin To Net: NetName=uC_RX Pin=U4-1
+Added Pin To Net: NetName=uC_TX Pin=U4-4

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=CCT_24V Pin=C26-1
+Change Component Comment : Designator=C26 Old Comment=100uF (NP) New Comment=100uF
+Added Pin To Net: NetName=AC/DC IN Pin=C26-1
+Added Member To Class: ClassName=RoBeast_Power_Switching Member=Component C26 100uF

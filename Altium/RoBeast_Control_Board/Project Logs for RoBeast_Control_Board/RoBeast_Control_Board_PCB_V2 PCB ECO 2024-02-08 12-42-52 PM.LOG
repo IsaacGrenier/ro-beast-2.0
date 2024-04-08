@@ -1,0 +1,16 @@
+Added Component: Designator=NP13(0805)
+Added Component: Designator=NP14(0805)
+Added Component: Designator=NP15(0805)
+Added Component: Designator=NP16(0805)
+Added Pin To Net: NetName=NetC40_1 Pin=NP13-1
+Added Pin To Net: NetName=GND Pin=NP13-2
+Added Pin To Net: NetName=NetC39_1 Pin=NP14-1
+Added Pin To Net: NetName=GND Pin=NP14-2
+Added Pin To Net: NetName=NetC42_1 Pin=NP15-1
+Added Pin To Net: NetName=GND Pin=NP15-2
+Added Pin To Net: NetName=NetC41_1 Pin=NP16-1
+Added Pin To Net: NetName=GND Pin=NP16-2
+Added Member To Class: ClassName=RoBeast_Power_Linear Member=Component NP13 Not Populated
+Added Member To Class: ClassName=RoBeast_Power_Linear Member=Component NP14 Not Populated
+Added Member To Class: ClassName=RoBeast_Power_Linear Member=Component NP15 Not Populated
+Added Member To Class: ClassName=RoBeast_Power_Linear Member=Component NP16 Not Populated

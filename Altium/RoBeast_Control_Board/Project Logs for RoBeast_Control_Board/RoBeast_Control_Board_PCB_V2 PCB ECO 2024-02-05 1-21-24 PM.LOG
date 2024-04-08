@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=USB_N Pin=TP62-1
+Removed Pin From Net: NetName=USB_P Pin=TP63-1
+Removed Member From Class: ClassName=RoBeast_UI Member=TP62
+Removed Member From Class: ClassName=RoBeast_UI Member=TP63
+Change Component Description : Designator=R82 Old Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL New Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL | TE Connectivity RLC73PH2BR10FTD
+Change Component Description : Designator=R84 Old Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL New Description=Current Sensing Resistor, RLC73PH 2B R10, 1 percent, 5K RL | TE Connectivity RLC73PH2BR10FTD
