@@ -195,8 +195,8 @@ class Beast(QMainWindow):
         desired_height_range = self.ui.lnedt_height_range.text()
         desired_height_interval = self.ui.lnedt_height_interval.text()
         desired_height_speed = self.ui.lnedt_height_speed.text()
-        if (float(desired_height_range) >= 0.1 and float(desired_height_range) <= (190 - float(curr_height))) and \
-            (float(desired_height_interval) >= 1 and float(desired_height_interval) <= 10*float(desired_height_range)) and \
+        if (float(desired_height_range) >= 0.1 and float(desired_height_range) <= 190) and \
+            (float(desired_height_interval) >= 1 and float(desired_height_interval) <= 10*(float(desired_height_range) - float(curr_height)) and \
                 (float(desired_height_speed) >= 0.1 and float(desired_height_speed) <= 10):
             self.ui.lbl_warnings_val.setText("")
             # while loops untested
